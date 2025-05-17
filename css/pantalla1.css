@@ -2,16 +2,15 @@
 .flip-container {
   perspective: 1000px;
   width: 375px;
-  height: 667px; /* Mejor usar altura fija para móvil */
+  height: 100vh;
   position: relative;
-  margin: 0 auto; /* Centrar horizontalmente */
 }
 
 .flipper {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
@@ -35,13 +34,7 @@
   font-family: "Bungee", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  color: var(--rojo-amor);
-
   -webkit-text-stroke: 0.5px rgb(241, 230, 230);
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  gap: 2rem;
 }
 
 /* Estilos del contenido frontal */
@@ -55,28 +48,13 @@
   -webkit-text-stroke: 0.5px rgb(241, 230, 230);
 }
 
-.pantalla h1 {
-  width: 40rem;
-  padding: 2rem;
-  text-align: center;
-  font-family: "Bungee", sans-serif;
-  font-weight: 900;
-  font-size: 40px;
-  color: var(--rojo-amor);
-  position: relative;
-  -webkit-text-stroke: 0.5px rgb(241, 230, 230);
-  transform: rotate(90deg);
-  left: 13rem;
-  top: 10rem;
-  z-index: 3;
-}
-
 .img {
   width: 100%;
   height: 60rem;
   position: absolute;
   z-index: 2;
-  bottom: -5rem;
+  max-width: 100%;
+  margin-top: -1rem;
 }
 
 .img img {
@@ -134,36 +112,56 @@
 
 /* Estilos del botón mejorados */
 .btn_girar {
+  top: 35rem;
+  left: 27rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10;
   width: 10rem;
   height: 5rem;
-  background-color: rgb(219, 215, 166);
-  border: 2px solid black;
+  background-color: white;
+  border: 2px solid var(--rojo-amor);
   border-radius: 1rem;
   font-family: "Bungee", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
+  font-size: 1.2rem;
   color: var(--rojo-amor);
-  -webkit-text-stroke: 0.5px rgb(241, 230, 230);
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.btn_girar {
-  position: absolute;
-  margin-top: 20rem;
-  left: 27rem;
-  z-index: 10;
+  transition: all 0.3s ease;
 }
 
 .btn_girar:hover {
-  transform: scale(1.05) rotate(1deg);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  background-color: rgb(255, 230, 180);
-  color: black;
+  background-color: var(--amarillo-alegria);
+  transform: scale(1.05);
 }
 
 .btn_girar:active {
   transform: translateY(2px) scale(0.98);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn_regresar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: rgb(219, 215, 166);
+  position: relative;
+  border: 2px solid black;
+  cursor: pointer;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--rojo-amor);
+  -webkit-text-stroke: 0.5px rgb(241, 230, 230);
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_regresar:hover {
+  background-color: var(--amarillo-alegria);
+  transform: scale(1.1);
 }

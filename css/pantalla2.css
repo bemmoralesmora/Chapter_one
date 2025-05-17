@@ -61,13 +61,13 @@
 }
 
 .nota2 {
-  width: 15rem;
+  width: 25rem;
   height: 8rem;
   background-color: rgb(219, 215, 166);
   z-index: 2;
   position: absolute;
-  bottom: 0;
-  left: 1rem;
+  bottom: 4rem;
+  left: 6rem;
   border-radius: 1rem;
   border: 2px solid black;
   padding: 0.5rem;

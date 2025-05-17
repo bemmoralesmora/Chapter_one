@@ -41,6 +41,11 @@ function pantalla1() {
   let pantalla_trasera = document.createElement("div");
   pantalla_trasera.className = "back pantalla_trasera";
 
+  let btn_regresar = document.createElement("button");
+  btn_regresar.className = "btn_regresar";
+  btn_regresar.textContent = "<";
+  pantalla_trasera.appendChild(btn_regresar);
+
   let mensajeTrasero = document.createElement("h2");
   mensajeTrasero.textContent = "¡Feliz Cumpleaños!";
   pantalla_trasera.appendChild(mensajeTrasero);
@@ -52,6 +57,11 @@ function pantalla1() {
   // Eventos para girar y regresar
   btn_girar.addEventListener("click", () => {
     flipContainer.classList.add("flipped");
+  });
+
+  // Modificamos solo el evento del botón regresar
+  btn_regresar.addEventListener("click", () => {
+    flipContainer.classList.remove("flipped");
   });
 
   return flipContainer;

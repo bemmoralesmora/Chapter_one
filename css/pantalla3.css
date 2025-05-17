@@ -1,0 +1,222 @@
+.pantalla3 {
+  width: 375px;
+  height: 100vh;
+  background: var(--verde-alegria);
+  position: relative;
+  overflow: hidden;
+}
+
+.pantalla3 h1 {
+  padding: 2rem;
+  text-align: center;
+
+  font-family: "Bungee", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+
+  color: rgb(230, 118, 78);
+  -webkit-text-stroke: 0.5px rgb(241, 230, 230);
+  z-index: 3;
+  position: absolute;
+  margin-top: 3rem;
+}
+
+.shape {
+  max-width: 100%; /* Evita que las formas sobresalgan */
+  position: absolute;
+}
+
+/* Figura amarilla ahora es un triángulo en la parte superior derecha */
+.yellow-shape3 {
+  width: 300px;
+  height: 300px;
+  background: var(--amarillo-alegria);
+  top: 50px;
+  right: 50px;
+  border-radius: 50%;
+  box-shadow: 30px 30px 0 0 var(--amarillo-alegria),
+    0 0 20px rgba(255, 235, 59, 0.7);
+  transform: rotate(-15deg);
+  z-index: 0;
+}
+
+/* Figura roja ahora es un rombo centrado */
+.red-shape3 {
+  width: 400px;
+  height: 400px;
+  background: var(--rojo-amor);
+  top: 50%;
+  left: 50%;
+  box-shadow: 30px 30px 0 0 var(--celeste-claro),
+    /* Esto crea el efecto de luna creciente */ 0 0 20px rgba(255, 63, 63, 0.7); /* Sutil brillo */
+  transform: rotate(-15deg);
+}
+
+/* Nueva figura blanca rectangular */
+.white-rectangle {
+  width: 200px;
+  height: 50px;
+  background: white;
+  top: 15rem;
+  left: 25%;
+  border-radius: 15px;
+}
+
+.img_p3 {
+  width: 100%;
+  height: 70rem;
+  position: absolute;
+  z-index: 2;
+  margin-top: 10rem;
+}
+
+.img_p3 img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.nota3 {
+  width: 20rem;
+  height: 5rem;
+  background-color: rgb(219, 215, 166);
+  z-index: 2;
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  border-radius: 1rem;
+  border: 2px solid black;
+  padding: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bungee", sans-serif;
+  font-size: 10px;
+}
+
+/* Contenedor flip base */
+.flip-container {
+  perspective: 1000px;
+  width: 375px;
+  height: 100vh;
+  position: relative;
+}
+
+.flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-container.flipped .flipper {
+  transform: rotateY(180deg);
+}
+
+/* Estilos comunes para front y back */
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+/* Pantalla frontal (mantiene tus estilos actuales) */
+.pantalla3 {
+  width: 100%;
+  height: 100%;
+  background: var(--verde-alegria);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Pantalla trasera corregida */
+.pantalla_trasera3 {
+  background-color: var(--verde-alegria);
+  transform: rotateY(180deg);
+  font-family: "Bungee", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--rojo-amor);
+
+  -webkit-text-stroke: 0.5px rgb(241, 230, 230);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Ajustar el mensaje trasero */
+.pantalla_trasera3 h1 {
+  text-align: center;
+  font-family: "Bungee", sans-serif;
+  color: var(--rojo-amor);
+  -webkit-text-stroke: 0.5px white;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Ajustes para los botones en pantalla3 */
+.btn_girar3 {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10;
+  width: 10rem;
+  height: 5rem;
+  background-color: white;
+  border: 2px solid var(--rojo-amor);
+  border-radius: 1rem;
+  font-family: "Bungee", sans-serif;
+  font-size: 1.2rem;
+  color: var(--rojo-amor);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn_girar3:hover {
+  background-color: var(--amarillo-alegria);
+  transform: scale(1.05);
+}
+
+.btn_regresar3 {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: rgb(219, 215, 166);
+  position: relative;
+  border: 2px solid black;
+  cursor: pointer;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--rojo-amor);
+  -webkit-text-stroke: 0.5px rgb(241, 230, 230);
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_regresar3:hover {
+  background-color: var(--amarillo-alegria);
+  transform: scale(1.1);
+}
+
+.white-rectangle {
+  z-index: 2;
+}

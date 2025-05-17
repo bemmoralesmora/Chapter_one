@@ -1,0 +1,32 @@
+.pantalla5 {
+  width: 375px;
+  height: 100vh;
+  background: var(--celeste-claro); /* celeste base */
+  position: relative;
+  overflow: hidden;
+}
+
+.shape {
+  max-width: 100%; /* Evita que las formas sobresalgan */
+  position: absolute;
+}
+
+.yellow-shape5 {
+  width: 500px;
+  height: 500px;
+  background: var(--rojo-amor);
+  top: 6rem;
+  left: -100px;
+  transform: rotate(25deg);
+  clip-path: ellipse(80% 30% at 60% 50%);
+}
+
+.red-shape5 {
+  width: 600px;
+  height: 400px;
+  background: var(--amarillo-alegria);
+  bottom: -100px;
+  right: -150px;
+  transform: rotate(-15deg);
+  clip-path: ellipse(60% 100% at 50% 20%);
+}

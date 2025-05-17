@@ -1,0 +1,169 @@
+/* Estilos base del contenedor */
+.flip-container {
+  perspective: 1000px;
+  width: 375px;
+  height: 667px; /* Mejor usar altura fija para móvil */
+  position: relative;
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-container.flipped .flipper {
+  transform: rotateY(180deg);
+}
+
+/* Estilos de las pantallas */
+.pantalla {
+  width: 100%;
+  height: 100%;
+  background: var(--celeste-claro);
+  position: absolute;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.pantalla_trasera {
+  background-color: var(--celeste-claro);
+  transform: rotateY(180deg);
+  font-family: "Bungee", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--rojo-amor);
+
+  -webkit-text-stroke: 0.5px rgb(241, 230, 230);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Estilos del contenido frontal */
+.ollie-bg h1 {
+  padding: 2rem;
+  text-align: center;
+  font-family: "Bungee", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  color: var(--rojo-amor);
+  -webkit-text-stroke: 0.5px rgb(241, 230, 230);
+}
+
+.pantalla h1 {
+  width: 40rem;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Bungee", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: var(--rojo-amor);
+  position: relative;
+  -webkit-text-stroke: 0.5px rgb(241, 230, 230);
+  transform: rotate(90deg);
+  left: 13rem;
+  top: 10rem;
+  z-index: 3;
+}
+
+.img {
+  width: 100%;
+  height: 60rem;
+  position: absolute;
+  z-index: 2;
+  bottom: -5rem;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Formas decorativas */
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.9;
+  max-width: 100%;
+}
+
+.yellow-shape {
+  width: 500px;
+  height: 500px;
+  background: var(--amarillo-alegria);
+  top: 150px;
+  left: -100px;
+  transform: rotate(25deg);
+  clip-path: ellipse(70% 40% at 50% 50%);
+}
+
+.red-shape {
+  width: 600px;
+  height: 400px;
+  background: var(--rojo-amor);
+  bottom: -100px;
+  right: -150px;
+  transform: rotate(-15deg);
+  clip-path: ellipse(60% 45% at 50% 50%);
+}
+
+/* Nota */
+.nota {
+  width: 35rem;
+  height: 5rem;
+  background-color: rgb(219, 215, 166);
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  border-radius: 1rem;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bungee", sans-serif;
+  font-size: 10px;
+}
+
+/* Estilos del botón mejorados */
+.btn_girar {
+  width: 10rem;
+  height: 5rem;
+  background-color: rgb(219, 215, 166);
+  border: 2px solid black;
+  border-radius: 1rem;
+  font-family: "Bungee", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--rojo-amor);
+  -webkit-text-stroke: 0.5px rgb(241, 230, 230);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn_girar {
+  position: absolute;
+  margin-top: 20rem;
+  left: 27rem;
+  z-index: 10;
+}
+
+.btn_girar:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 230, 180);
+  color: black;
+}
+
+.btn_girar:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

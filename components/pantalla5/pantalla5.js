@@ -12,7 +12,7 @@ function pantalla5() {
 
   // Elementos existentes de pantalla5
   let h1_p5 = document.createElement("h1");
-  h1_p5.textContent = "figaro te quiere mucho";
+  h1_p5.textContent = "Figaro loves you very much";
 
   let img_p5 = document.createElement("div");
   img_p5.innerHTML = `<img src="./assets/figaro.png" alt="">`;
@@ -31,7 +31,8 @@ function pantalla5() {
 
   let nota5 = document.createElement("div");
   nota5.className = "nota5";
-  nota5.textContent = "Abre tu regalo especial";
+  nota5.textContent =
+    "¡Hola, mi humana favorita! Te quiero muchísimo y te extraño un montón. ¡Feliz cumpleaños!";
 
   // Ensamblar frontal
   front.append(yellowShape5, redShape5, h1_p5, img_p5, btn_girar, nota5);

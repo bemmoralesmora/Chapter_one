@@ -9,19 +9,3 @@
   flex-direction: column;
   position: relative;
 }
-
-@media (max-width: 1024px) {
-  .ollie-bg {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 768px; /* Limita el ancho máximo (opcional) */
-    padding: 0 20px; /* Añade espacio interno para no pegarse a los bordes */
-  }
-}
-
-@media (max-width: 767px) {
-  .ollie-bg {
-    width: 100%; /* Ancho completo */
-    max-width: none; /* Elimina límite máximo (opcional) */
-    padding: 0 15px; /* Menos padding que en tablet */
-  }
-}

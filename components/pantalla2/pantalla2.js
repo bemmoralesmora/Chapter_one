@@ -29,7 +29,8 @@ function pantalla2() {
 
   let nota2 = document.createElement("div");
   nota2.className = "nota2";
-  nota2.textContent = "Abre tu regalo especial";
+  nota2.textContent =
+    "Espero que tu cumpleaños esté lleno de regalos, porque para mí, haberte conocido ya es el mejor que la vida me ha dado.";
 
   // Botón girar
   let btn_girar = document.createElement("button");

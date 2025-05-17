@@ -12,7 +12,7 @@ function pantalla4() {
 
   // Elementos existentes de pantalla4
   let h1_p4 = document.createElement("h1");
-  h1_p4.textContent = "te amo muchote";
+  h1_p4.textContent = "I love you infinitely";
 
   let img_p4 = document.createElement("div");
   img_p4.innerHTML = `<img src="./assets/love3.png" alt="">`;
@@ -31,7 +31,8 @@ function pantalla4() {
 
   let nota4 = document.createElement("div");
   nota4.className = "nota4";
-  nota4.textContent = "Abre tu regalo especial";
+  nota4.textContent =
+    "¡Te amooooooooo infinito y más allá, como no tienes idea!";
 
   // Ensamblar frontal
   front.append(yellowShape4, redShape4, img_p4, h1_p4, btn_girar, nota4);

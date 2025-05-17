@@ -1,10 +1,9 @@
 /* Estilos base del contenedor */
 .flip-container {
   perspective: 1000px;
-  width: 375px;
+  width: 400px;
   height: 100vh;
   position: relative;
-  margin: 0 auto; /* Centrado en desktop */
 }
 
 .flipper {
@@ -165,107 +164,4 @@
 .btn_regresar:hover {
   background-color: var(--amarillo-alegria);
   transform: scale(1.1);
-}
-
-/* ============ Tablet (768px - 1024px) ============ */
-@media (max-width: 1024px) {
-  .flip-container {
-    width: 100%;
-    max-width: 600px; /* Limitar ancho máximo */
-    height: 90vh; /* Reducir altura */
-  }
-
-  .ollie-bg h1 {
-    font-size: 40px; /* Texto más pequeño */
-    padding: 1.5rem;
-  }
-
-  .img {
-    height: 50rem; /* Ajustar altura de imagen */
-  }
-
-  /* Formas decorativas */
-  .yellow-shape {
-    width: 400px;
-    height: 400px;
-    top: 100px;
-  }
-
-  .red-shape {
-    width: 450px;
-    height: 300px;
-  }
-
-  /* Botón girar */
-  .btn_girar {
-    top: 30rem;
-    left: auto; /* Quitar posición fija */
-    right: 2rem;
-    width: 8rem;
-    height: 4rem;
-  }
-
-  .nota {
-    width: 30rem;
-    height: 4rem;
-    font-size: 9px;
-  }
-}
-
-/* ============ Móvil (hasta 767px) ============ */
-@media (max-width: 767px) {
-  .flip-container {
-    height: 100vh; /* Ocupar toda la altura */
-    perspective: 500px; /* Menos perspectiva para móvil */
-  }
-
-  .ollie-bg h1 {
-    font-size: 30px; /* Texto mucho más pequeño */
-    padding: 1rem;
-    -webkit-text-stroke: 0.3px rgb(241, 230, 230);
-  }
-
-  .img {
-    height: 40rem; /* Altura más compacta */
-  }
-
-  /* Formas decorativas - más pequeñas y menos invasivas */
-  .yellow-shape {
-    width: 300px;
-    height: 300px;
-    top: 50px;
-    left: -50px;
-  }
-
-  .red-shape {
-    width: 350px;
-    height: 250px;
-    bottom: -50px;
-    right: -80px;
-  }
-
-  /* Botones */
-  .btn_girar {
-    top: auto;
-    bottom: 2rem;
-    right: 50%;
-    transform: translateX(50%); /* Centrado horizontal */
-    width: 7rem;
-    height: 3.5rem;
-    font-size: 1rem;
-  }
-
-  .nota {
-    width: 90%; /* Ancho relativo */
-    left: 50%;
-    transform: translateX(-50%); /* Centrado */
-    height: 3.5rem;
-    font-size: 8px;
-  }
-
-  .btn_regresar {
-    width: 4rem;
-    height: 4rem;
-    font-size: 16px;
-  }
 }

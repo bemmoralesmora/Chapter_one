@@ -12,7 +12,7 @@ function pantalla3() {
 
   // Elementos existentes
   let h1_p3 = document.createElement("h1");
-  h1_p3.textContent = "amor mio";
+  h1_p3.textContent = "my love";
 
   let img_p3 = document.createElement("div");
   img_p3.innerHTML = `<img src="./assets/catnap.png" alt="">`;
@@ -34,7 +34,8 @@ function pantalla3() {
 
   let nota3 = document.createElement("div");
   nota3.className = "nota3";
-  nota3.textContent = "Abre tu regalo especial";
+  nota3.textContent =
+    "Eres el amor de mi vida, y cada instante de felicidad en mí lleva tu nombre, my love.";
 
   // Ensamblar frontal
   front.append(

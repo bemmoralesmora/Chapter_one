@@ -14,7 +14,7 @@
   font-weight: 900;
   font-size: 50px;
 
-  color: rgb(230, 118, 78);
+  color: var(--rojo-amor);
   -webkit-text-stroke: 0.5px rgb(241, 230, 230);
   z-index: 3;
   position: absolute;

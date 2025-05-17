@@ -1,9 +1,38 @@
 .pantalla5 {
   width: 375px;
   height: 100vh;
-  background: var(--celeste-claro); /* celeste base */
+  background: var(--beige); /* celeste base */
   position: relative;
   overflow: hidden;
+}
+
+.pantalla5 h1 {
+  padding: 2rem;
+  text-align: center;
+
+  font-family: "Bungee", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+
+  color: var(--rojo-amor);
+  -webkit-text-stroke: 0.5px rgb(241, 230, 230);
+  z-index: 3;
+  position: absolute;
+  margin-top: 7rem;
+}
+
+.img_p5 {
+  width: 100%;
+  height: 70rem;
+  position: absolute;
+  z-index: 2;
+  margin-top: 15rem;
+}
+
+.img_p5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .shape {
@@ -14,7 +43,7 @@
 .yellow-shape5 {
   width: 500px;
   height: 500px;
-  background: var(--rojo-amor);
+  background: rgb(255, 36, 120);
   top: 6rem;
   left: -100px;
   transform: rotate(25deg);
@@ -24,9 +53,106 @@
 .red-shape5 {
   width: 600px;
   height: 400px;
-  background: var(--amarillo-alegria);
+  background: var(--movimiento-naranja);
   bottom: -100px;
   right: -150px;
   transform: rotate(-15deg);
   clip-path: ellipse(60% 100% at 50% 20%);
+}
+
+/* Estilos para los botones y nota en pantalla5 (adaptados de pantalla4) */
+.btn_girar5 {
+  position: absolute;
+  bottom: 10rem;
+  left: 15rem;
+  z-index: 10;
+  width: 10rem;
+  height: 5rem;
+  background-color: white;
+  border: 2px solid var(--rojo-amor); /* Color café para coordinar con Figaro */
+  border-radius: 1rem;
+  font-family: "Bungee", sans-serif;
+  font-size: 1.2rem;
+  color: var(--rojo-amor); /* Color café */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn_girar5:hover {
+  background-color: var(--beige); /* Dorado para hover */
+  transform: scale(1.05);
+}
+
+.btn_regresar5 {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #fff9c4; /* Amarillo claro */
+  position: relative;
+  border: 2px solid var(--rojo-amor); /* Café */
+  cursor: pointer;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--rojo-amor); /* Café */
+  -webkit-text-stroke: 0.5px rgb(241, 230, 230);
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_regresar5:hover {
+  background-color: var(--amarillo-alegria); /* Dorado */
+  transform: scale(1.1);
+}
+
+.nota5 {
+  width: 35rem;
+  height: 10rem;
+  background-color: var(--beige); /* Amarillo claro */
+  z-index: 2;
+  position: absolute;
+  bottom: 2em;
+  left: 1rem;
+  border-radius: 1rem;
+  border: 2px solid black; /* Café */
+  padding: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bungee", sans-serif;
+  font-size: 10px;
+}
+
+/* Pantalla trasera para pantalla5 */
+.pantalla_trasera5 {
+  background-color: var(--beige); /* Color café claro */
+  transform: rotateY(180deg);
+  font-family: "Bungee", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #5d4037; /* Café oscuro */
+
+  -webkit-text-stroke: 0.5px rgb(241, 230, 230);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Ajustar el mensaje trasero */
+.pantalla_trasera5 h1 {
+  text-align: center;
+  font-family: "Bungee", sans-serif;
+  color: #5d4037; /* Café oscuro */
+  -webkit-text-stroke: 0.5px white;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }

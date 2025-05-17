@@ -10,9 +10,10 @@ html {
 }
 
 :root {
-  --beige: beige;
+  --beige: rgb(247, 247, 169);
   --celeste-claro: #92d2ee;
   --rojo-amor: #db5d4f;
   --amarillo-alegria: #f9d85e;
   --verde-alegria: rgb(128, 247, 117);
+  --movimiento-naranja: rgb(230, 118, 78);
 }

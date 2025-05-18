@@ -1,8 +1,9 @@
 .pantalla5 {
-  width: 375px;
-  height: 100vh;
-  background: var(--beige); /* celeste base */
-  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--beige);
+  position: absolute;
+  backface-visibility: hidden;
   overflow: hidden;
 }
 

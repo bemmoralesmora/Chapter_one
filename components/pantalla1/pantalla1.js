@@ -47,7 +47,11 @@ function pantalla1() {
   pantalla_trasera.appendChild(btn_regresar);
 
   let mensajeTrasero = document.createElement("h2");
-  mensajeTrasero.textContent = "¡Feliz Cumpleaños!";
+  mensajeTrasero.textContent =
+    "Espero que hoy el sol te sonría y que cada instante esté lleno de luz,\n" +
+    "porque tú eres la razón por la que mis días brillan.\n" +
+    "De mi parte, solo puedo decirte que eres lo más hermoso que me ha regalado la vida,\n" +
+    "y me llena el alma saber que formas parte de la mía.\n\n";
   pantalla_trasera.appendChild(mensajeTrasero);
 
   // Inserto ambas caras en el flipper

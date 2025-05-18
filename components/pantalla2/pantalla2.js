@@ -58,8 +58,11 @@ function pantalla2() {
 
   // Contenido de la pantalla trasera
   let mensajeTrasero = document.createElement("h2");
-  mensajeTrasero.textContent = "¡Espero que te guste!";
-
+  mensajeTrasero.textContent =
+    "Stephany, te amo con una intensidad que no cabe en palabras,\n" +
+    "y te amaré así… sin medida, sin final, sin condición.\n" +
+    "Siempre tendrás un lugar eterno en mi corazón,\n" +
+    "ese rincón donde solo tú existes y floreces.\n\n";
   // Ensamblar pantalla trasera
   back.append(btn_regresar, mensajeTrasero);
 

@@ -47,8 +47,9 @@ function pantalla5() {
   btn_regresar.textContent = "<";
 
   // Contenido trasero (personalizado para pantalla5)
-  let mensajeTrasero = document.createElement("h1");
-  mensajeTrasero.textContent = "Eres su humano favorito";
+  let mensajeTrasero = document.createElement("h3");
+  mensajeTrasero.textContent =
+    "Hola, Stephany. Espero que tengas un hermoso cumpleaños.\nDesde acá te mando muchos besitos (como los que tú siempre me mandas), y ya hacen falta unos míos por allá.\nPor cierto, te quiero mucho… gracias por estar junto a mi humano.\nNo sabes lo loco que está por ti. Yo vi todo lo que hizo por ti, y de verdad, nunca lo había visto así.\nTe extraño. <3\n—Con amor, Figaro. 🐾";
 
   // Ensamblar trasera
   back.append(btn_regresar, mensajeTrasero);

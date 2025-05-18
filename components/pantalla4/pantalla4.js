@@ -32,7 +32,7 @@ function pantalla4() {
   let nota4 = document.createElement("div");
   nota4.className = "nota4";
   nota4.textContent =
-    "¡Te amooooooooo infinito y más allá, como no tienes idea!";
+    "¡Te amooooooooo al infinito y más allá, como no tienes idea!";
 
   // Ensamblar frontal
   front.append(yellowShape4, redShape4, img_p4, h1_p4, btn_girar, nota4);
@@ -47,10 +47,12 @@ function pantalla4() {
   btn_regresar.textContent = "<";
 
   // Contenido trasero (personalizado para pantalla4)
-  let mensajeTrasero = document.createElement("h1");
-  mensajeTrasero.textContent = "Eres lo mejor que me ha pasado";
-
-  // Ensamblar trasera
+  let mensajeTrasero = document.createElement("h2");
+  mensajeTrasero.textContent =
+    "lo quiero todo contigo…\n" +
+    "los días buenos, los retos, los sueños, las risas,\n" +
+    "y hasta los silencios compartidos.\n\n" +
+    "Contigo, todo vale la pena.";
   back.append(btn_regresar, mensajeTrasero);
 
   // Unir todo

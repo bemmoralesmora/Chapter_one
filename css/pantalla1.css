@@ -1,7 +1,7 @@
 /* Estilos base del contenedor */
 .flip-container {
   perspective: 1000px;
-  width: 400px;
+  width: 375px;
   height: 100vh;
   position: relative;
 }
@@ -32,8 +32,7 @@
   background-color: var(--celeste-claro);
   transform: rotateY(180deg);
   font-family: "Bungee", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 10px;
   -webkit-text-stroke: 0.5px rgb(241, 230, 230);
 }
 
@@ -54,7 +53,6 @@
   position: absolute;
   z-index: 2;
   max-width: 100%;
-  margin-top: -0.5rem;
 }
 
 .img img {

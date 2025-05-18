@@ -58,9 +58,11 @@ function pantalla3() {
   btn_regresar.textContent = "<";
 
   // Contenido trasero
-  let mensajeTrasero = document.createElement("h1");
-  mensajeTrasero.textContent = "Eres mi persona favorita";
-
+  let mensajeTrasero = document.createElement("h2");
+  mensajeTrasero.textContent =
+    "Le doy gracias a Dios por haberte puesto en mi camino,\n" +
+    "por unir nuestras almas en este viaje llamado amor.\n" +
+    "Hoy solo quiero decirte una verdad clara y sincera:\n";
   // Ensamblar trasera
   back.append(btn_regresar, mensajeTrasero);
 
